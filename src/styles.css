@@ -1,21 +1,45 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
+/* Reset styles */
+body, h1, p, button {
   margin: 0;
-  border: 0;
   padding: 0;
-  background-color: #fff;
+  font-family: Arial, sans-serif;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
-}
-
-main > h1 {
+/* Centered container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #6a11cb);
+  color: white;
   text-align: center;
-  font-size: 3.5em;
+}
+
+/* Button styles */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: #ffcc00;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffdd44;
+}
+
+/* Hidden message */
+.hidden {
+  display: none;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcc00;
 }
